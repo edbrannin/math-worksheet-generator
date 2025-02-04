@@ -1,0 +1,4 @@
+.math-problem .operand:last-child {
+  border-bottom: 2px solid light-dark(black, white);
+}
+

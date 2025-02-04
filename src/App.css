@@ -28,7 +28,7 @@
   border-radius: 1em;
 }
 
-@media (print) {
+@media print {
   #root {
     background-color: white;
     color: black;
@@ -37,4 +37,18 @@
   .no-print {
     display: none;
   }
+  #root {
+    max-width: 100%;
+    width: 100%;
+    height: 80vh;
+  }
+
+  @page  
+  { 
+      size: auto;   /* auto is the initial value */ 
+  
+      /* this affects the margin in the printer settings */ 
+      margin: 25mm 25mm 25mm 25mm;  
+  } 
+  
 }
