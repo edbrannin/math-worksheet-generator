@@ -20,8 +20,8 @@ const DEFAULT_OPTIONS: ProblemOptions = {
 };
 
 function App() {
-  const [rows, setRows] = useState(10)
-  const [cols, setCols] = useState(6)
+  const [rows, setRows] = useState(8)
+  const [cols, setCols] = useState(7)
   const [options, setOptions] = useState<ProblemOptions>(DEFAULT_OPTIONS)
 
   const problems = useGetProblems(rows * cols, options)

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import shuffle from 'lodash/shuffle';
 
 import { AdditionProblemOptions, MathProblem, ProblemOptions } from './types'
 
@@ -50,7 +51,7 @@ const useGetProblems = (count: number, options: ProblemOptions) => {
         usedProblems.add(index);
       }
     }
-    setProblems(allProblems.filter((_, i) => usedProblems.has(i)));
+    setProblems(shuffle(allProblems.filter((_, i) => usedProblems.has(i))));
   }, [allProblems, count, options.shuffleCount])
   return problems;
 }
