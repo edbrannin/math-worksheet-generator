@@ -1,6 +1,19 @@
+import { FC } from "react";
 import NumberInput from "./NumberInput";
+import { ProblemOptions, Setter } from './types';
 
-const Controls = ({
+
+type ControlsProps = {
+  rows: number;
+  columns: number;
+  options: ProblemOptions;
+  setRows: Setter<number>;
+  setColumns: Setter<number>;
+  setOptions: Setter<ProblemOptions>;
+  onShuffle: () => void,
+}
+
+const Controls: FC<ControlsProps> = ({
   rows,
   columns,
   options,

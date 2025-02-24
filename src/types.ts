@@ -21,3 +21,4 @@ export type MathProblem = {
   solution?: number;
 }
 
+export type Setter<T> = (val: T) => void;
