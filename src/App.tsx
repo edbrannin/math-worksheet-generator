@@ -4,7 +4,6 @@ import './App.css'
 import Controls from './Controls'
 import useGetProblems from './useGetProblems'
 import { ProblemOptions } from './types'
-import MathProblem from './MathProblem'
 import MathProblems from './MathProblems'
 
 const DEFAULT_OPTIONS: ProblemOptions = {
