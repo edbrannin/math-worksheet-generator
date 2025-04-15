@@ -29,7 +29,7 @@ function App() {
     <>
       <div className="no-print">
         <h1>Math Worksheet Generator</h1>
-        <p>(Tthis box won't appear when you print)</p>
+        <p>(This box won't appear when you print)</p>
         <Controls
           columns={cols}
           setColumns={setCols}
